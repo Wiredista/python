@@ -30,7 +30,7 @@ while True:
 		after  = array[a+1]
 		if before > after:
 			if(animetype == "s"):
-				plt.plot(array, "o")
+				plt.plot(array)
 				plt.pause(delaytime / 1000)
 				plt.gcf().clear()
 			array[a] = after
@@ -41,7 +41,7 @@ while True:
 		break
 
 	if(animetype == "f"):
-		plt.plot(array, "o")
+		plt.plot(array)
 		plt.pause(delaytime / 1000)
 		plt.gcf().clear()
 
